@@ -18,7 +18,7 @@ docker exec php__1 bash -ce "cd /data/site_projects/php__1/site_projects/site5/ 
 docker exec php__1 bash -ce "cd /data/site_projects/php__1/site_projects/site5/ ; composer install"
 
 # 마이그레이트
-docker exec php__1 bash -ce "cd /data/site_projects/php__1/site_projects/site5/ ; php artisan migrate"
+docker exec php__1 bash -ce "cd /data/site_projects/php__1/site_projects/site5/ ; php artisan migrate --force"
 
 exit 0
 
